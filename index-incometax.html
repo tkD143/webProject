@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Tax Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #2f363d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7b7e81;
+        }
+        #tax {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+  <script>
+    function calculateTax() {
+        var income = parseFloat(document.getElementById("income").value);
+        var tax;
+
+        if (income <= 250000) {
+            tax = 0;
+        } else if (income <= 400000) {
+            tax = (income - 250000) * 0.20;
+        } else if (income <= 800000) {
+            tax = 30000 + (income - 400000) * 0.25;
+        } else if (income <= 2000000) {
+            tax = 130000 + (income - 800000) * 0.30;
+        } else if (income <= 8000000) {
+            tax = 490000 + (income - 2000000) * 0.32;
+        } else {
+            tax = 2410000 + (income - 8000000) * 0.35;
+        }
+
+        document.getElementById("tax").innerHTML = "Income Tax: " + tax;
+    }
+</script>
+</head>
+<body>
+    <h1>Income Tax Calculator</h1>
+    <label for="income">Enter Taxable Income:</label>
+    <br>
+    <input type="number" id="income">
+    <br>
+    <button onclick="calculateTax()">Calculate Tax</button>
+    <div id="tax"></div>
+</body>
+</html>
