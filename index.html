@@ -1,1 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tristanKairu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#art" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ART</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="#addtwonumbers" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>ADD TWO NUMBERS</p>
+  </a>
+  <a href="#gradecomputation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>GRADE COMPUTATION</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#art" class="w3-bar-item w3-button" style="width:25% !important">ART</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#addtwonumbers" class="w3-bar-item w3-button" style="width:25% !important">ADD TWO NUMBERS VER. 1</a>
+    <a href="#addtwonumbersVER2" class="w3-bar-item w3-button" style="width:25% !important">ADD TWO NUMBERS VER. 2</a>
+    <a href="#gradecomputation" class="w3-bar-item w3-button" style="width:25% !important">GRADE COMPUTATION</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+
+    
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Tristan Dagatan.</h1>
+    <p>Artist and Programmer.</p>
+    <img src="4b54a036609d2032b83f3f2a29526282.jpg" alt="Tristan Dagatan" class="w3-image" width="400" height="400">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am Tristan, an aspiring artist and programmer student with a passion for creativity and technology. With a keen eye for aesthetics and a knack for problem-solving, Tristan combines his artistic talents with his programming skills to create innovative and visually stunning projects. Whether it's designing captivating user interfaces or developing interactive applications, Tristan's unique blend of artistic flair and technical expertise sets him apart. With a thirst for knowledge and a drive to excel, Tristan is constantly seeking new opportunities to expand his skills and make a meaningful impact in the world of art and technology.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Art</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Gaming</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">8+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Art</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Love and Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Art</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Love and Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="https://64.media.tumblr.com/310db4923640fa6ac00b1739c228ada7/c7f1a75843a25c35-32/s540x810/01a4a7f94a12783e2dcd1d71de545b893244e58e.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Anya Forger.</span> Daughter of Yor and Loid Forger.</p>
+    <p>Tristan saved us from an art disaster!</p><br>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR8Im6rpcwx1RQ3O4lZqLfcbS1rh9582hekOlSW1xveGtgc4O8eIBP2mpqetF5ezW7qCc&usqp=CAU" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Bond Forger.</span> Guard Dog of the Forger Family.</p>
+    <p>No one is better than Tristan at being our assistant. Borf!  </p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="art">
+    <h2 class="w3-text-light-grey">Art</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for art -->
+    <style>
+        body {
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+          text-align: center;
+          color: #333333;
+        }
+        
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        
+        .gallery img {
+          width: 300px;
+          height: 400px;
+          object-fit: cover;
+          margin: 10px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+      </style>
+    </head>
+    <body>
+      
+      <div class="gallery">
+        <img src="https://i.pinimg.com/236x/de/32/b8/de32b83906964b8fd1210a297181605d.jpg" alt="Portrait 1">
+        <img src=""
+        <img src="https://i.pinimg.com/236x/bc/29/f8/bc29f88644887f029de07c17b6453a13.jpg" alt="Portrait 2">
+        <img src="https://i.pinimg.com/236x/5f/70/05/5f7005305cad401dbad05899a487f857.jpg" alt="Portrait 3">
+        <img src="https://i.pinimg.com/236x/c2/4a/09/c24a09eb436102cb3eb7c80c03be3a07.jpg" alt="Portrait 4">
+        <img src="https://i.pinimg.com/236x/38/98/3c/38983c5d3e92307dd4eb4b5843d51228.jpg" alt="Portrait 5">
+        <img src="https://i.pinimg.com/236x/cb/7d/48/cb7d48ac454bf42d787aab7057fc4936.jpg" alt="Portrait 6"> 
+
+
+
+        <!-- Add more images here -->
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Location: Davao del Sur, Davao City, Philippines</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone number: 09308160799</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> School Email: tkmdagatan@addu.edu.ph</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+  <br><br>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="addtwonumbers">
+    <h2 class="w3-text-light-grey">Add Two Numbers Ver. 1</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <br><br>
+
+    <label for="n1"> Type the 1st number: </label>
+    <input id="n1" type="number">
+
+    <br><br>
+    
+    <label for="n2"> Type the 2nd number: </label>
+    <input id="n2" type="number">
+
+    <br><br>
+
+    <button onclick="computeSum()">Compute sum</button>
+    <br><br>
+
+
+    <label for="sum"> The sum is: </label>
+    <input id="sum" type="readonly">
+  
+    <br><br><br>
+    <button onclick="clearValues()">Clear values</button>
+
+    <!-- End Add Two Numbers Version 1 Section-->
+    </div>
+
+    <br><br>
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="addtwonumbersVER2">
+        <h2 class="w3-text-light-grey">Add Two Numbers Ver. 2</h2>
+        <hr style="width:200px" class="w3-opacity">
+        
+            <br><br>
+        
+            <label for="nu1"> Type the 1st number: </label>
+            <input id="nu1" type="number" onkeyup="computeSum2()">
+        
+            <br><br>
+            
+            <label for="nu2"> Type the 2nd number: </label>
+            <input id="nu2" type="number" onkeyup="computeSum2()">
+        
+            <br><br>
+        
+        
+            <label for="sum2"> The sum is: </label>
+            <input id="sum2" type="readonly">
+          
+            <br><br><br>
+            <button onclick="clearValues2()">Clear values</button>
+
+    <!-- End Add Two Numbers Version 1 & 2Section-->
+    </div>
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="gradecomputation">
+        <h2 class="w3-text-light-grey">Grade Computation</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <label for="score">Type the score: </label>
+        <input id="score" type="number">
+
+        <br><br>
+
+        <label for="items">Type the items: </label>
+        <input id="items" type="number">
+        
+        <br><br>
+
+        <label for="base">Type the base: </label>
+        <input id="base" type="number">
+
+        <br><br>
+
+        <button onclick="computeGrade()">Compute grade</button>
+
+        <br><br>
+
+        <label for="grade">Grade: </label>
+        <input id="grade" type="number">
+
+        <br>
+
+        <label for="lettergrade">Equivalent grade: </label>
+        <input id="lettergrade" type="text">
+
+        <br><br>
+
+        <h1 id ="gradecomment"></h1>
+        
+
+        
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class ="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/tristanKairu" target="_blank" class="w3-hover-text-blue">tristanKairu</a></p>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <a href="https://www.pinterest.ph/torisuumi/" target="_blank" class="w3-hover-text-blue">torisuumi</a></p>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <a href="https://twitter.com/1shin0umi/" target="_blank" class="w3-hover-text-blue">1shin0umi</a></p>
+
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+    <center><a href="index2.html">Back to Home Page</a></center>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+    <script>
+
+        //ver.1
+
+        function clearValues()
+        {
+            document.getElementById("n1").value = '';
+            document.getElementById("n2").value = '';
+            document.getElementById("sum").value = '';
+        }
+
+        function computeSum()
+        {
+            var x1,x2,x3;
+
+            x1 = document.getElementById("n1").value*1;
+            x2 = document.getElementById("n2").value*1;
+
+            //Adding two numbers
+            x3 = x1 + x2;
+
+            document.getElementById("sum").value = x3;
+
+        }
+
+        //ver.2
+
+        function clearValues2()
+        {
+            document.getElementById("nu1").value = '';
+            document.getElementById("nu2").value = '';
+            document.getElementById("sum2").value = '';
+        }
+
+        function computeSum2()
+        {
+            var x1,x2,x3;
+
+            x1 = document.getElementById("nu1").value*1;
+            x2 = document.getElementById("nu2").value*1;
+
+            //Adding two numbers
+            x3 = x1 + x2;
+
+            document.getElementById("sum2").value = x3;
+
+        }
+
+        //Grade Computation
+
+        function computeGrade()
+        {
+            var score,items,base,g,lg,gradecomment;
+
+            score = document.getElementById("score").value*1;
+            items = document.getElementById("items").value*1;
+            base = document.getElementById("base").value*1;
+
+            g = Math.round(base + (score/items)*(100-base));
+            document.getElementById("grade").value = g;
+
+            if (g < 72)
+                lg = "F"
+            else if (g <= 75)
+                lg = "D"
+            else if (g <= 79)
+                lg = "C+"
+            else if (g <= 83)
+                lg = "C+"
+            else if (g <= 87)
+                lg = "B"
+            else if (g <= 91)
+                lg = "B+"
+            else
+                lg = "A";
+
+            document.getElementById("lettergrade").value = lg;
+
+            switch(lg)
+            {
+                case 'F':gradecomment=" a failing grade";
+                break;
+                case 'D':gradecomment=" a passing grade";
+                break;
+                case 'C':
+                case 'C+':gradecomment=" an average grade";
+                break;
+                case 'B':gradecomment=" a good grade";
+                break;
+                case 'B+':gradecomment=" a very good grade";
+                break;
+                default: gradecomment=" an excellent grade";
+            }
+
+            document.getElementById("gradecomment").innerHTML = 'The grade is ' + gradecomment + '.';
+        }
+    </script>
+
+
+</body>
+</html>
