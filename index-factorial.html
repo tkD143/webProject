@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3b4044;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #292d31;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="button"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        label {
+            color: #ecf0f1;
+        }
+
+        p {
+            color: #ecf0f1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Factorial Calculator</h1>
+
+        <label for="nth">Input your number here:</label>
+        <input type="text" id="nth" name="nth" autocomplete="off">
+
+        <input type="button" value="Calculate" onclick="factorial()">
+
+        <label for="factor" id="factor">Factorial: </label>
+        <label for="sum" id="sum">Sum: </label>
+        <label for="mean" id="mean">Average: </label>
+
+        <p id="endli"></p>
+    </div>
+
+    <script>
+        function factorial(){
+            var i, f, r, a, m, n;
+
+            i = 1;
+            f = 1;
+            r = 1;
+            a = 0;
+            m = 0;
+
+            n = document.getElementById("nth").value * 1;
+
+            while (i <= n) {
+                f = f * i;
+                i++;
+            }
+            document.getElementById("factor").innerHTML = 'Factorial: ' + f;
+
+            i = 1;
+
+            do {
+                r = r * i;
+                a = a + r;
+                i++;
+            } while (i <= n);
+            document.getElementById("sum").innerHTML = 'Sum: ' + a;
+
+            m = a / n;
+            document.getElementById("mean").innerHTML = 'Average: ' + m;
+        }
+    </script>
+</body>
+</html>
