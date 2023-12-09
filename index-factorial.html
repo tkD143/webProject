@@ -26,29 +26,19 @@
             text-align: center;
         }
 
-        button {
-      padding: 10px 20px;
-      background-color: #32383b;
-      color: #ecf0f1;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+        input[type="text"],
+        input[type="number"],
+        input[type="button"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
 
-    button:hover {
-      background-color: #555b61;
-    }
-
-    input[type="text"],
-    input[type="number"] {
-      width: calc(100% - 16px);
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      background-color: #ecf0f1;
-      color: #2c3e50;
-    }
         label {
             color: #ecf0f1;
         }
