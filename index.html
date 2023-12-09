@@ -16,6 +16,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+.view-payroll-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-payroll-button:hover {
+      background-color: #555;
+    }
 </style>
 </head>
 <body class="w3-black">
@@ -350,51 +365,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <h2 class="w3-text-light-grey">Payroll</h2>
         <hr style="width:200px" class="w3-opacity">
 
-        <div class="w3-padding-64 w3-content w3-text-grey" id="payroll">
-          <h2 class="w3-text-light-grey">Payroll</h2>
-          <hr style="width:200px" class="w3-opacity">
-      
-          <div class="form-group">
-            <label for="EName">Employee Name:</label>
-            <input id="EName" name="EName" type="text">
-          </div>
-      
-          <div class="form-group">
-            <label for="Days">Days Worked:</label>
-            <input id="Days" name="daysW" type="number">
-          </div>
-      
-          <div class="form-group">
-            <label for="DRate">Daily Rate:</label>
-            <input id="DRate" name="Drate" type="number">
-          </div>
-          
-          <div class="form-group">
-            <label for="DAmount">Deduction Amount:</label>
-            <input id="DAmount" name="Damount" type="number">
-          </div>
-      
-          <button onclick="addTabRow()">Add to Roll</button>
-      
-          <div class="form-group">
-            <label for="delEmployee">Enter No. to delete:</label>
-            <input id="delEmployee" name="delEmployee" type="number">
-            <button onclick="deleteEmployee()">Delete</button>
-          </div>
-      
-          <table id="payroll">
-            <tr>
-              <th>Number</th>
-              <th>Employee Name</th>
-              <th>Days Worked</th>
-              <th>Daily Rate</th>
-              <th>Gross Pay</th>
-              <th>Deduction Amount</th>
-              <th>Net Pay</th>
-            </tr>
-          </table>
-        
-          </div>
+        <a href="index-payroll.html" class="view-payroll-button">View Payroll</a>
+      </div>
 
       
         
@@ -520,50 +492,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         }
 
         //Payroll
-
-        var no = 1;
-
-
-    function addTabRow() {
-      var tabHook = document.getElementById("payroll");
-      var newRow = tabHook.insertRow(-1);
-      newRow.id = "row" + no;
-      var cells = [];
-
-      for (var i = 0; i < 7; i++) {
-        cells[i] = newRow.insertCell(i);
-      }
-
-      var days = document.getElementById("Days").value * 1;
-      var rate = document.getElementById("DRate").value * 1;
-      var grossPay = days * rate;
-      var deduction = document.getElementById("DAmount").value * 1;
-      var netPay = grossPay - deduction;
-
-      cells[0].innerHTML = no;
-      cells[1].innerHTML = document.getElementById("EName").value;
-      cells[2].innerHTML = days;
-      cells[3].innerHTML = rate;
-      cells[4].innerHTML = grossPay;
-      cells[5].innerHTML = deduction;
-      cells[6].innerHTML = netPay;
-
-      no++;
-    }
-
-    function deleteEmployee() {
-      var delno = document.getElementById("delEmployee").value;
-      var rowId = "row" + delno;
-      var rowToRemove = document.getElementById(rowId);
-
-      if (rowToRemove) {
-        rowToRemove.remove();
-      }
-    }
-
-    
-
-
 
     </script>
 
